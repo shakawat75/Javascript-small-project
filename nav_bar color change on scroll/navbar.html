@@ -1,0 +1,46 @@
+<doctype='html'>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+		<title>navbar</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+
+		<div class="bg-img">
+
+		<div class="navbar" id="bg-navbar">
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Services</a>
+			<a href="">Contact</a>
+		</div>
+	</div>
+		
+		<p>Educational Pathways in FinTech
+FinTech Boot Camps
+FinTech boot camps provide a space for students to get started quickly in fintech. Boot camps provide structured learning opportunities and hands-on experience for students interested in the field. Boot camps are both personalized and intensive — they offer thorough curricula simulating real-world experiences but they often can be pursued remotely, in a schedule-friendly manner. Columbia Engineering FinTech Boot Camp, for example, offers a base for anyone wanting to get started in fintech within just 24 weeks, including flexible modules covering everything from financial analysis to algorithmic trading and blockchain transactions.
+
+Degrees With a Focus on FinTech
+When it comes to traditional degrees, more colleges are offering degrees with a focus on fintech as the field grows. These programs allow students to learn the specifics of a traditional finance major while developing the technical skills that may be potentially valuable in fintech. These programs typically take 2-4 years to complete, depending on the degree program and how many classes a student can take at once.
+
+Self-Taught FinTech Options
+There are also many resources available for those wanting to learn fintech on their own, including free online courses, educational multimedia and apps, and digital guides. Self-teaching options are ideal for those favoring a fully autonomous learning structure, offering the chance to learn industry basics along with personal organization and time management skills.</p>
+
+<script>
+	var bg_navbar = document.getElementById("bg-navbar");
+	window.onscroll = function(){
+		var scroll_nav = window.scrollY;
+		if(scroll_nav >100)
+			bg_navbar.classList.add('after-scroll-navbar');
+		else
+			bg_navbar.classList.remove('after-scroll-navbar');
+	}
+	</script>
+
+	</body>
+</html>
